@@ -4,23 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人网站</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的个人网站</h1>
         <nav>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">个人简介</a></li>
+                <li><a href="#about">个人简介</a></li>
+                <li><a href="#education">教育经历</a></li>
+                <li><a href="#contact">联系方式</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>简介</h2>
-            <p>这是一个关于我的个人网站，你可以在这里了解我的教育背景、研究方向以及联系方式。</p>
-        </section>
+        <div class="container">
+            <section id="about">
+                <h1>个人简介</h1>
+                <p>姓名：马燕</p>
+                <p>学历：硕士研究生</p>
+                <p>毕业院校：新疆农业大学农业资源与环境专业，农学学士</p>
+                <p>现就读院校：华中农业大学</p>
+                <p>专业：资源利用与植物保护</p>
+                <p>研究方向：资源利用</p>
+            </section>
+            <section id="education">
+                <h1>教育经历</h1>
+                <ul>
+                    <li>本科：新疆农业大学农业资源与环境专业，农学学士</li>
+                    <li>硕士：华中农业大学，资源利用与植物保护专业</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h1>联系方式</h1>
+                <p>邮箱：3248853489@qq.com</p>
+                <p>电话：15099081195</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 马燕</p>
